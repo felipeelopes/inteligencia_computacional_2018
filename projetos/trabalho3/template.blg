@@ -5,46 +5,53 @@ The style file: plain.bst
 Database file #1: referencias.bib
 Warning--string name "ref_c_icip" is undefined
 --line 48 of file referencias.bib
+Warning--string name "ieee_j_pami" is undefined
+--line 85 of file referencias.bib
+Too many commas in name 1 of "Fabiano G L, Luiz C P, Herbert K, Antônio Filho" for entry ref:art2007
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Fabiano G L, Luiz C P, Herbert K, Antônio Filho" for entry ref:art2007
+while executing---line 1090 of file plain.bst
+Warning--empty journal in ref:art2007
 Warning--empty booktitle in ref:haykin1
-You've used 1 entry,
+You've used 2 entries,
             2118 wiz_defined-function locations,
-            502 strings with 4085 characters,
-and the built_in function-call counts, 390 in all, are:
-= -- 36
-> -- 7
+            505 strings with 4226 characters,
+and the built_in function-call counts, 595 in all, are:
+= -- 55
+> -- 14
 < -- 2
-+ -- 3
-- -- 2
-* -- 21
-:= -- 60
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 4
++ -- 6
+- -- 4
+* -- 31
+:= -- 98
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 20
-empty$ -- 37
-format.name$ -- 2
-if$ -- 89
+cite$ -- 4
+duplicate$ -- 30
+empty$ -- 54
+format.name$ -- 4
+if$ -- 129
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 2
-pop$ -- 7
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 13
+num.names$ -- 4
+pop$ -- 13
 preamble$ -- 1
-purify$ -- 3
+purify$ -- 6
 quote$ -- 0
-skip$ -- 18
+skip$ -- 25
 stack$ -- 0
-substring$ -- 25
+substring$ -- 30
 swap$ -- 9
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
-warning$ -- 1
-while$ -- 4
-width$ -- 2
-write$ -- 13
-(There were 2 warnings)
+type$ -- 8
+warning$ -- 2
+while$ -- 6
+width$ -- 3
+write$ -- 22
+(There were 2 error messages)
