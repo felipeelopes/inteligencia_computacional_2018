@@ -1,25 +1,7 @@
 #!/usr/local/env python
-
-"""
- Encontre o minimo da funcao
- F(x, y) = | x.y.sen(y.TT)
-           |         -----
-           |         ()
-"""
-
 from random import randint, random
 import numpy as np
 import math
-
-# Cromossomo: usado para modelar a solucao
-#           - eh a solucao do problema
-#           - cromossomo = solucao = individuo
-
-
-# Modelagem do problema
-# Problema: maximizar o numero de 1s no cromossomo
-#   - Precisa definir a funcao de fitness
-#   - Precisa definir o fenotipo do cromossomo
 
 def dec_bin(ini, fim, indice, binario):
     decimal = 0
