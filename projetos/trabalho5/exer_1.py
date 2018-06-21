@@ -38,7 +38,7 @@ def fitness(cromossomo: list) -> float:
     solucao = x * y * np.sin((y * np.pi) / 4)
     #print(f'Solucao Calculada = {solucao}')
 
-    if (x >= -100 and y >= -100) and (y <= 100 and y <= 100):
+    if (x >= -100 and y >= -100) and (x <= 100 and y <= 100):
         return abs(solucao)
     else:
         return 999999
