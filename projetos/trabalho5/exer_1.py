@@ -9,7 +9,7 @@
 
 from random import randint, random
 import numpy as np
-from bitstring import BitArray
+import math
 
 # Cromossomo: usado para modelar a solucao
 #           - eh a solucao do problema
@@ -28,41 +28,35 @@ def dec_bin(ini, fim, indice, binario):
         indice -= 1
     return decimal
 
-def decodifica(cromossomo):
-
-    # Extrai o sinal
-    sinal_x = cromossomo[0]
-    sinal_y = cromossomo[8]
-
-    # Extrai o numero e converte para inteiro
-    x = BitArray(cromossomo[1:8]).uint
-    y = BitArray(cromossomo[9:16]).uint
-
-    # Aplica o sinal no numero
-    if sinal_x == 1: x *= -1
-    if sinal_y == 1: y *= -1
-
-    return x, y
-
 def fitness(cromossomo: list) -> float:
+    # Funcao de fitness: avalia um cromossomo
+    # - Deve ser capaz de avaliar se um cromossomo eh melhor que outro
+    # - Avalia se a solucao eh boa ou ruim
+
     # decodificacao do cromossomo
+    indice_x = len(cromossomo[1:8]) - 1
+    indice_y = len(cromossomo[9:16]) - 1
 
-    x1, x2 = decodifica(cromossomo)
+    x = dec_bin(1, len(cromossomo[1:8]), indice_x, cromossomo)
+    y = dec_bin(9, len(cromossomo), indice_y, cromossomo)
 
-    # aplicar penalidade
-    # solucao para nao zerar o fitness
-    penalidade = 0
-    if x1 == x2: penalidade = 100
+    if cromossomo[0] == 1:
+        x = x * (-1)
+    if cromossomo[8] == 1:
+        y = y * (-1)
 
-    y1 = x1 ** 2 + 2 * x1 - 3
-    y2 = x2 ** 2 + 2 * x2 - 3
+    # achar o minimo da funcao
+    solucao = x * y * np.sin((y * np.pi) / 4)
+    #print(f'Solucao Calculada = {solucao}')
 
-    return abs(y1) + abs(y2) + penalidade
+    if (x >= -100 and y >= -100) and (y <= 100 and y <= 100):
+        return abs(solucao)
+    else:
+        return 999999
 
 def roleta(populacao):
     """
     Implementacao do algoritmo da roleta viciada.
-
     :param populacao: lista com todos os cromossomos
     :return: lista com os pares de pais que vao cruzar entre si
     """
@@ -71,6 +65,9 @@ def roleta(populacao):
     total = 0
     for individuo in populacao:
         total += individuo[1]
+
+    # print(f'total: {total}')
+    # print('total: {0}'.format(total)) # equivalente
 
     # 2. Calcula as porcentagens
     #    print('Calculando as porcentagens: ')
@@ -121,7 +118,6 @@ def roleta(populacao):
     #        print(f'{individuo[0][0]} - {individuo[1][0]}')
 
     return pais
-
 
 def crossover(pais, taxa_mutacao):
     filhos = []
@@ -200,23 +196,22 @@ def algoritmo_genetico(tam_populacao,
 
         print(f'### GERACAO {geracao} ###')
         nova_populacao.sort(key=lambda individuo: individuo[1], reverse=False)
+
         print(f'{nova_populacao[0][0]} => {nova_populacao[0][1]}')
 
-        indice_x1 = len(nova_populacao[0][0][1:8]) - 1
-        indice_x2 = len(nova_populacao[0][0][9:16]) - 1
+        # decodificacao do cromossomo
+        indice_x = len(nova_populacao[0][0][1:8]) - 1
+        indice_y = len(nova_populacao[0][0][9:16]) - 1
 
-        x1 = dec_bin(1, len(nova_populacao[0][0][1:8]), indice_x1, nova_populacao[0][0])
-        x2 = dec_bin(9, len(nova_populacao[0][0]), indice_x2, nova_populacao[0][0])
+        x = dec_bin(1, len(nova_populacao[0][0][1:8]), indice_x, nova_populacao[0][0])
+        y = dec_bin(9, len(nova_populacao[0][0]), indice_y, nova_populacao[0][0])
 
         if nova_populacao[0][0][0] == 1:
-            x1 = x1 * (-1)
+            x = x * (-1)
         if nova_populacao[0][0][8] == 1:
-            x2 = x2 * (-1)
-        print(f'X1 = {x1} X2 = {x2}')
+            y = y * (-1)
 
-        #for i in range(len(nova_populacao)):
-        #    print(f'Populacao = {nova_populacao[i][0]} fitness=>{nova_populacao[i][1]}')
-
+        print(f'X = {} y = {y}')
         #for individuo in nova_populacao:
         #    print(f'{individuo[0]} => {individuo[1]}')
 
@@ -254,13 +249,13 @@ def main():
     TAM_CROMOSSOMO = 16
 
     # Tamanho da populacao
-    TAM_POPULACAO = 1000
+    TAM_POPULACAO = 100
 
     # Numero maximo de geracoes
-    MAX_GERACOES = 20
+    MAX_GERACOES = 10
 
     # Taxa de Mutacao
-    TAXA_MUTACAO = 0.1  # 1%
+    TAXA_MUTACAO = 0.01  # 1%
 
     # Execucao do algoritmo
     algoritmo_genetico(TAM_POPULACAO,
