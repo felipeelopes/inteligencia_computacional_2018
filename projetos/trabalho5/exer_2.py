@@ -1,25 +1,6 @@
 #!/usr/local/env python
-
-"""
- Encontre o minimo da funcao
- F(x, y) = | x.y.sen(y.TT)
-           |         -----
-           |         ()
-"""
-
 from random import randint, random
-import numpy as np
 from bitstring import BitArray
-
-# Cromossomo: usado para modelar a solucao
-#           - eh a solucao do problema
-#           - cromossomo = solucao = individuo
-
-
-# Modelagem do problema
-# Problema: maximizar o numero de 1s no cromossomo
-#   - Precisa definir a funcao de fitness
-#   - Precisa definir o fenotipo do cromossomo
 
 def dec_bin(ini, fim, indice, binario):
     decimal = 0
@@ -133,27 +114,17 @@ def crossover(pais, taxa_mutacao):
             probabilidade = random()
 
             if probabilidade < taxa_mutacao:
-                #                print(f'Sofreu mutacao! {probabilidade}')
-                #                print(f'antes:  {filho1}')
                 filho1[i] = int(not filho1[i])
-                #                print(f'depois: {filho1}')
 
         for i in range(0, len(filho2)):
             probabilidade = random()
 
             if probabilidade < taxa_mutacao:
-                #                print(f'Sofreu mutacao! {probabilidade}')
-                #                print(f'antes:  {filho2}')
                 filho2[i] = int(not filho2[i])
-                #                print(f'depois: {filho2}')
 
         # Salva os filhos gerados
         filhos.append([filho1, fitness(filho1)])
         filhos.append([filho2, fitness(filho2)])
-
-        #   print('Filhos gerados: ')
-        #   for individuo in filhos:
-        #       print(f'{individuo[0]} => {individuo[1]}')
 
     return filhos
 
