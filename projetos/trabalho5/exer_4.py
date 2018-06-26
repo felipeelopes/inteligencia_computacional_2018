@@ -1,50 +1,83 @@
 #!/usr/local/env python
-
 from random import randint, random
+from bitstring import BitArray
 
+def dec_bin(ini, fim, indice, binario):
+    decimal = 0
+    for i in range(ini, fim):
+        decimal += binario[i] * 2 ** indice
+        indice -= 1
+    return decimal
 
-# Cromossomo: usado para modelar a solucao
-#           - eh a solucao do problema
-#           - cromossomo = solucao = individuo
+def decodifica(cromossomo):
 
+    # Extrai o sinal
+    sinal_x = cromossomo[0]
+    sinal_y = cromossomo[8]
 
-# Modelagem do problema
-# Problema: maximizar o numero de 1s no cromossomo
-#   - Precisa definir a funcao de fitness
-#   - Precisa definir o fenotipo do cromossomo
+    # Extrai o numero e converte para inteiro
+    x = BitArray(cromossomo[1:8]).uint
+    y = BitArray(cromossomo[9:16]).uint
+
+    # Aplica o sinal no numero
+    if sinal_x == 1: x *= -1
+    if sinal_y == 1: y *= -1
+
+    return x, y
 
 def fitness(cromossomo: list) -> float:
-    # Funcao de fitness: avalia um cromossomo
-    # - Deve ser capaz de avaliar se um cromossomo eh melhor que outro
-    # - Avalia se a solucao eh boa ou ruim
-
     # decodificacao do cromossomo
-    indice = len(cromossomo) - 1
-    x = 0
-    for i in range(len(cromossomo)):
-        x += cromossomo[i] * 2 ** indice
-        indice -= 1
 
-    # Para o problema de achar o maximo da funcao
-    # return -x ** 2 + 2 * x + 3
-    return -2.2 * x ** 2 + 8.6 * x + 1
+    x1, x2 = decodifica(cromossomo)
 
-def torneio(populacao, k_inidividuos):
-    pass
+    # aplicar penalidade
+    # solucao para nao zerar o fitness
+    penalidade = 0
+    if x1 == x2: penalidade = 100
 
-def aleatorio(populacao):
-    pass
+    y1 = x1 ** 2 + 2 * x1 - 3
+    y2 = x2 ** 2 + 2 * x2 - 3
+
+    return abs(y1) + abs(y2) + penalidade
+
+def torneio(populacao):
+    # 1 passo pegar o tamanho da populacao
+    n_populacao = len(populacao)
+
+    # 2 passo realiza o torneio
+    pais = []
+
+    # percorre a populacoa
+    for i in range(int(len(populacao) / 2)):
+        # inicializa os pais
+        pai1 = populacao[0][:2]
+        pai2 = populacao[0][:2]
+
+        # realiza selecao dos individuos de forma aleatoria para o torneio
+        individuo1 = randint(0, n_populacao - 1)
+        individuo2 = randint(0, n_populacao - 1)
+        individuo3 = randint(0, n_populacao - 1)
+        individuo4 = randint(0, n_populacao - 1)
+
+        # caso o fitnes do individuo 1 seja menor que o fitnes do individuo 2
+        if populacao[individuo1][1] < populacao[individuo2][1]:
+            pai1 = populacao[individuo1]
+        else:
+            pai1 = populacao[individuo2]
+
+        # caso o fitness do individuo 3 seja menor que o individuo 4
+        if populacao[individuo3][1] < populacao[individuo4][1]:
+            pai2 = populacao[individuo3]
+        else:
+            pai2 = populacao[individuo4]
+
+        pais.append([pai1, pai2])
+
+    return pais
 
 def roleta(populacao):
-    """
-    Implementacao do algoritmo da roleta viciada.
-
-    :param populacao: lista com todos os cromossomos
-    :return: lista com os pares de pais que vao cruzar entre si
-    """
-
     # 1. Calcula o total do fitness de todos os cromossomos
-    total = 0
+    total = 1
     for individuo in populacao:
         total += individuo[1]
 
@@ -58,7 +91,6 @@ def roleta(populacao):
     # print(individuo)
 
     # 3. Calcula as porcentagens acumuladas
-    #    print('Calculando as porcentagens acumuladas: ')
 
     anterior = 0
     for individuo in populacao:
@@ -66,7 +98,6 @@ def roleta(populacao):
         individuo.append(acumulado)
 
         anterior = acumulado
-    # print(individuo)
 
     # 4. Gerar os n pares de pais
     pais = []
@@ -79,28 +110,18 @@ def roleta(populacao):
 
         # TODO: Verificar pq a roleta esta quebrando
         for individuo in populacao:
-            # print(f'1: {roleta1} - {individuo[3]}')
             if roleta1 <= individuo[3]:
                 pai1 = individuo[:2]
                 break
 
         for individuo in populacao:
-            # print(f'2: {roleta2} - {individuo[3]} - {populacao}')
             if roleta2 <= individuo[3]:
                 pai2 = individuo[:2]
                 break
 
-                # TODO: Corrigir a selecao de 2 pais iguais
-                #        print(f'>>1 {pai1} ')
-                #        print(f'>>2 {pai2} ')
         pais.append([pai1, pai2])
 
-    # print('Lista de pais:')
-    #    for individuo in pais:
-    #        print(f'{individuo[0][0]} - {individuo[1][0]}')
-
     return pais
-
 
 def crossover(pais, taxa_mutacao):
     filhos = []
@@ -122,34 +143,24 @@ def crossover(pais, taxa_mutacao):
             probabilidade = random()
 
             if probabilidade < taxa_mutacao:
-                #                print(f'Sofreu mutacao! {probabilidade}')
-                #                print(f'antes:  {filho1}')
                 filho1[i] = int(not filho1[i])
-                #                print(f'depois: {filho1}')
 
         for i in range(0, len(filho2)):
             probabilidade = random()
 
             if probabilidade < taxa_mutacao:
-                #                print(f'Sofreu mutacao! {probabilidade}')
-                #                print(f'antes:  {filho2}')
                 filho2[i] = int(not filho2[i])
-                #                print(f'depois: {filho2}')
 
         # Salva os filhos gerados
         filhos.append([filho1, fitness(filho1)])
         filhos.append([filho2, fitness(filho2)])
-
-        #   print('Filhos gerados: ')
-        #   for individuo in filhos:
-        #       print(f'{individuo[0]} => {individuo[1]}')
 
     return filhos
 
 
 def elitismo(populacao, tam_populacao):
     # Ordena pelo fitness
-    populacao.sort(key=lambda individuo: individuo[1], reverse=True)
+    populacao.sort(key=lambda individuo: individuo[1], reverse=False)
 
     # Retorna os n primeiros
     return populacao[:tam_populacao]
@@ -178,31 +189,33 @@ def algoritmo_genetico(tam_populacao,
     while geracao < max_geracoes:
 
         print(f'### GERACAO {geracao} ###')
-        nova_populacao.sort(key=lambda individuo: individuo[1], reverse=True)
+        nova_populacao.sort(key=lambda individuo: individuo[1], reverse=False)
         print(f'{nova_populacao[0][0]} => {nova_populacao[0][1]}')
 
-        #for individuo in nova_populacao:
-        #    print(f'{individuo[0]} => {individuo[1]}')
+        indice_x1 = len(nova_populacao[0][0][1:8]) - 1
+        indice_x2 = len(nova_populacao[0][0][9:16]) - 1
+
+        x1 = dec_bin(1, len(nova_populacao[0][0][1:8]), indice_x1, nova_populacao[0][0])
+        x2 = dec_bin(9, len(nova_populacao[0][0]), indice_x2, nova_populacao[0][0])
+
+        if nova_populacao[0][0][0] == 1:
+            x1 = x1 * (-1)
+        if nova_populacao[0][0][8] == 1:
+            x2 = x2 * (-1)
+        print(f'X1 = {x1} X2 = {x2}')
 
         # Selecao dos pais
-        pais = roleta(nova_populacao)
+        #pais = roleta(nova_populacao) # metodo por roleta
+        pais = torneio(nova_populacao) # metodo por torneio, testado, resultado bate com a roleta
 
-        # Recombinacao (crossover) e mutacao
+        # Recomacao (crossover) e mutacao
         filhos = crossover(pais, taxa_mutacao)
 
         nova_populacao += filhos
-        nova_populacao.sort(key=lambda individuo: individuo[1], reverse=True)
-
-        #        print('Populacao total')
-        #        for individuo in nova_populacao:
-        #            print(f'{individuo[0]} => {individuo[1]}')
+        nova_populacao.sort(key=lambda individuo: individuo[1], reverse=False)
 
         # Selecao dos sobreviventes
         nova_populacao = elitismo(nova_populacao, tam_populacao)
-
-        #        print('Populacao sobrevivente')
-        #        for individuo in nova_populacao:
-        #            print(f'{individuo[0]} => {individuo[1]}')
 
         # passa para geracao seguinte
         geracao += 1
@@ -215,16 +228,16 @@ def main():
     # Configuracao dos parametros do AG
 
     # Numero de alelos do cromossomo
-    TAM_CROMOSSOMO = 5
+    TAM_CROMOSSOMO = 16
 
     # Tamanho da populacao
-    TAM_POPULACAO = 10
+    TAM_POPULACAO = 1000
 
     # Numero maximo de geracoes
-    MAX_GERACOES = 20
+    MAX_GERACOES = 10
 
     # Taxa de Mutacao
-    TAXA_MUTACAO = 0.01  # 1%
+    TAXA_MUTACAO = 0.1  # 1%
 
     # Execucao do algoritmo
     algoritmo_genetico(TAM_POPULACAO,
