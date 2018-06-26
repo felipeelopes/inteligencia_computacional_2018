@@ -123,6 +123,77 @@ def roleta(populacao):
 
     return pais
 
+# crossover com dois pontos de corte
+def crossover_dois_pontos(pais, taxa_mutacao):
+    filhos = []
+
+    for par in pais:
+        # Extrai os dois pais da lista
+        pai1 = par[0][0]
+        pai2 = par[1][0]
+
+        # Listas para armazenar os meios
+        meio1 = []
+        meio2 = []
+
+        # Tag para controlar se achou os cortes ideais
+        classificou_cortes = False
+
+        # Sorteia o ponto de corte
+        corte_1 = None
+        corte_2 = None
+
+        # Sorteia os pontos de corte 1 e 2
+        while(classificou_cortes == False):
+            corte_1 = randint(0, len(pai1) - 1)
+            corte_2 = randint(0, len(pai2) - 1)
+
+            # garante que o corte nao esteja na primeira posicao, nem na ultrima posicao e que o corte_1 seja menor que o corte_2
+            if corte_1 > 0 and corte_1 < int(len(pai1) - 1) and corte_2 > 0 and corte_2 < int(len(pai1) - 1) and corte_1 != corte_2 and corte_1 < corte_2:
+                classificou_cortes = True
+
+        # Realiza o crossover
+        if corte_1 < corte_2:
+            # adiciona o meio na lista de meios
+            for i in range(corte_1, corte_2):
+                meio1.append(pai1[i])
+                meio2.append(pai2[i])
+
+            # realiza o cross over
+            filho1 = pai1[:corte_1] + meio2 + pai1[corte_2:]
+            filho2 = pai2[:corte_1] + meio1 + pai2[corte_2:]
+
+        """
+        else:
+            print('else')
+            for i in range(corte_2, corte_1):
+                meio1.append(pai1[i])
+                meio2.append(pai2[i])
+
+            filho1 = pai1[:corte_1] + meio2 + pai1[corte_2:]
+            filho2 = pai2[:corte_1] + meio1 + pai2[corte_2:]
+        """
+
+        # Aplica a mutacao
+        for i in range(0, len(filho1)):
+            probabilidade = random()
+
+            if probabilidade < taxa_mutacao:
+                filho1[i] = int(not filho1[i])
+
+        for i in range(0, len(filho2)):
+            probabilidade = random()
+
+            if probabilidade < taxa_mutacao:
+                filho2[i] = int(not filho2[i])
+
+        # Salva os filhos gerados
+        filhos.append([filho1, fitness(filho1)])
+        filhos.append([filho2, fitness(filho2)])
+
+    return filhos
+
+
 def crossover(pais, taxa_mutacao):
     filhos = []
 
@@ -209,7 +280,8 @@ def algoritmo_genetico(tam_populacao,
         pais = torneio(nova_populacao) # metodo por torneio, testado, resultado bate com a roleta
 
         # Recomacao (crossover) e mutacao
-        filhos = crossover(pais, taxa_mutacao)
+        #filhos = crossover(pais, taxa_mutacao)
+        filhos = crossover_dois_pontos(pais, taxa_mutacao)
 
         nova_populacao += filhos
         nova_populacao.sort(key=lambda individuo: individuo[1], reverse=False)

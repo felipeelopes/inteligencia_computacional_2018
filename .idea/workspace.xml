@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07c614db-82b0-4cf7-9264-081cbdb67a33" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projetos/trabalho5/exer_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/projetos/trabalho5/exer_4.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,8 @@
       <file leaf-file-name="exer_4.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projetos/trabalho5/exer_4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="253" column="10" selection-start-line="253" selection-start-column="10" selection-end-line="253" selection-end-column="10" />
+            <state relative-caret-position="147">
+              <caret line="189" column="33" lean-forward="true" selection-start-line="189" selection-start-column="33" selection-end-line="189" selection-end-column="33" />
               <folding>
                 <element signature="e#24#58#0" expanded="true" />
               </folding>
@@ -28,20 +29,8 @@
       <file leaf-file-name="exer_2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projetos/trabalho5/exer_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="223" column="10" lean-forward="true" selection-end-line="223" selection-end-column="10" />
-              <folding>
-                <element signature="e#24#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exer_4_ok.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projetos/trabalho5/exer_4_ok.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="204" column="26" selection-end-line="253" selection-end-column="10" />
+            <state relative-caret-position="98">
+              <caret line="215" column="33" lean-forward="true" selection-start-line="215" selection-start-column="33" selection-end-line="215" selection-end-column="33" />
               <folding>
                 <element signature="e#24#58#0" expanded="true" />
               </folding>
@@ -70,9 +59,11 @@
       <find>Sorta</find>
       <find>y1 = x1 ** 2 + 2</find>
       <find>main</find>
-      <find>###</find>
       <find>roleta</find>
       <find>pais =</find>
+      <find>cross</find>
+      <find>Q</find>
+      <find>###</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -85,6 +76,7 @@
         <option value="$PROJECT_DIR$/projetos/trabalho5/exer_1.py" />
         <option value="$PROJECT_DIR$/projetos/trabalho5/exercicio_3.py" />
         <option value="$PROJECT_DIR$/projetos/trabalho5/exer_4_ok.py" />
+        <option value="$PROJECT_DIR$/projetos/trabalho5/teste.py" />
         <option value="$PROJECT_DIR$/projetos/trabalho5/exer_4.py" />
       </list>
     </option>
@@ -172,8 +164,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.329582" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.329582" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16111952" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3874598" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16111952" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" />
@@ -238,16 +230,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projetos/trabalho5/exer_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="223" column="10" lean-forward="true" selection-end-line="223" selection-end-column="10" />
-          <folding>
-            <element signature="e#24#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projetos/trabalho5/exer_4_ok.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
@@ -265,10 +247,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projetos/trabalho5/exer_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="215" column="33" lean-forward="true" selection-start-line="215" selection-start-column="33" selection-end-line="215" selection-end-column="33" />
+          <folding>
+            <element signature="e#24#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projetos/trabalho5/teste.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projetos/trabalho5/exer_4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="253" column="10" selection-start-line="253" selection-start-column="10" selection-end-line="253" selection-end-column="10" />
+        <state relative-caret-position="147">
+          <caret line="189" column="33" lean-forward="true" selection-start-line="189" selection-start-column="33" selection-end-line="189" selection-end-column="33" />
           <folding>
             <element signature="e#24#58#0" expanded="true" />
           </folding>
