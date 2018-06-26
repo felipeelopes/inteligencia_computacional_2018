@@ -193,6 +193,37 @@ def crossover_dois_pontos(pais, taxa_mutacao):
 
     return filhos
 
+def crossover_uniforme(pais, taxa_mutacao):
+    filhos = []
+
+    for par in pais:
+        # Extrai os dois pais da lista
+        pai1 = par[0][0]
+        pai2 = par[1][0]
+
+        filho1 = []
+
+        # gera a mascara que determinara quem troca com quem
+        mascara = [randint(0, 1) for i in range(0, len(pai1))]
+
+        # Realiza o crossover
+        for i in mascara:
+            if mascara[i] == 1:
+                filho1.append(pai1[i])
+            elif mascara[i] == 0:
+                filho1.append(pai2[i])
+
+        # Aplica a mutacao
+        for i in range(0, len(filho1)):
+            probabilidade = random()
+
+            if probabilidade < taxa_mutacao:
+                filho1[i] = int(not filho1[i])
+
+        # Salva os filhos gerados
+        filhos.append([filho1, fitness(filho1)])
+
+    return filhos
 
 def crossover(pais, taxa_mutacao):
     filhos = []
@@ -281,7 +312,8 @@ def algoritmo_genetico(tam_populacao,
 
         # Recomacao (crossover) e mutacao
         #filhos = crossover(pais, taxa_mutacao)
-        filhos = crossover_dois_pontos(pais, taxa_mutacao)
+        #filhos = crossover_dois_pontos(pais, taxa_mutacao)
+        filhos = crossover_uniforme(pais, taxa_mutacao)
 
         nova_populacao += filhos
         nova_populacao.sort(key=lambda individuo: individuo[1], reverse=False)
@@ -306,7 +338,7 @@ def main():
     TAM_POPULACAO = 1000
 
     # Numero maximo de geracoes
-    MAX_GERACOES = 10
+    MAX_GERACOES = 30
 
     # Taxa de Mutacao
     TAXA_MUTACAO = 0.1  # 1%
