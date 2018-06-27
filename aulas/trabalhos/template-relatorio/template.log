@@ -1,14 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.2.22)  18 APR 2018 20:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.27)  27 JUN 2018 17:54
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**template.tex
-(./template.tex
+**./template.tex
+(template.tex
 LaTeX2e <2017-04-15>
-Babel <3.12> and hyphenation patterns for 84 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size11.clo"
 File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -22,41 +20,49 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2017/06/29 3.12 The Babel package
+) ("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.st
+y"
+Package: babel 2018/02/14 3.18 The Babel package
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2017/06/29 3.12 Babel switching mechanism
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
+"
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuges.ldf
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-portuges\por
+tuges.ldf"
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2017/06/29 3.12 Babel common definitions
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2017/06/29 3.12 Babel switching mechanism
-)
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2018/02/14 3.18 Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
+
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.d
+ef")
+\bbl@dirlevel=\count88
 )
 \l@brazil = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -297,7 +303,7 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -338,7 +344,7 @@ File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -361,63 +367,67 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+)) ("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.st
+y"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+ ("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
-(/usr/share/texlive/texmf-dist/tex/latex/ae/ae.sty
+)) ("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ae\ae.sty"
 Package: ae 2001/02/12 1.3 Almost European Computer Modern
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )
 LaTeX Font Info:    Try loading font information for T1+aer on input line 105.
 
-(/usr/share/texlive/texmf-dist/tex/latex/ae/t1aer.fd
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ae\t1aer.fd"
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))
-(/usr/share/texlive/texmf-dist/tex/latex/ae/aecompl.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ae\aecompl.sty"
 Package: aecompl 1998/07/23 0.9 T1 Complements for AE fonts (D. Roegel)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\enumerate.st
+y"
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks16
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.sty
+"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color
+.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
+x.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color
+.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\colortbl\colortbl.
+sty"
+Package: colortbl 2018/05/02 v1.0c Color table columns (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen104
 \extrarowheight=\dimen105
@@ -429,7 +439,7 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \minrowclearance=\skip45
 )
 LaTeX Info: Redefining \color on input line 709.
-\rownum=\count88
+\rownum=\count89
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -439,30 +449,34 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\svgnam.def"
 File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
+y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
+ty"
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.
+sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.
+sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count89
-\Gm@cntv=\count90
-\c@Gm@tempcnt=\count91
+\Gm@cnth=\count90
+\Gm@cntv=\count91
+\c@Gm@tempcnt=\count92
 \Gm@bindingoffset=\dimen106
 \Gm@wd@mp=\dimen107
 \Gm@odd@mp=\dimen108
@@ -472,24 +486,28 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen112
 \Gm@layoutvoffset=\dimen113
 \Gm@dimlist=\toks20
-)
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+cfg"))
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.
+sty"
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip46
-\multirow@cntb=\count92
+\multirow@cntb=\count93
 \multirow@dima=\skip47
 \bigstrutjot=\dimen114
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\multicol.sty
+"
 Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
-\c@tracingmulticols=\count93
+\c@tracingmulticols=\count94
 \mult@box=\box26
 \multicol@leftmargin=\dimen115
-\c@unbalance=\count94
-\c@collectmore=\count95
-\doublecol@number=\count96
-\multicoltolerance=\count97
-\multicolpretolerance=\count98
+\c@unbalance=\count95
+\c@collectmore=\count96
+\doublecol@number=\count97
+\multicoltolerance=\count98
+\multicolpretolerance=\count99
 \full@width=\dimen116
 \page@free=\dimen117
 \premulticols=\dimen118
@@ -520,25 +538,28 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \@tempa=\box47
 \@tempa=\box48
 \@tempa=\box49
-\c@columnbadness=\count99
-\c@finalcolumnbadness=\count100
+\c@columnbadness=\count100
+\c@finalcolumnbadness=\count101
 \last@try=\dimen121
 \multicolovershoot=\dimen122
 \multicolundershoot=\dimen123
 \mult@nat@firstbox=\box50
 \colbreak@box=\box51
-\mc@col@check@num=\count101
+\mc@col@check@num=\count102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
+ics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
@@ -546,54 +567,85 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 \Gin@req@height=\dimen124
 \Gin@req@width=\dimen125
 )
-(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
-Package: subfigure 2002/03/15 v2.1.5 subfigure package
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
+y"
+Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
+
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.s
+ty"
+Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen126
+\captionmargin@=\dimen127
+\captionwidth=\dimen128
+\caption@tempdima=\dimen129
+\caption@indent=\dimen130
+\caption@parindent=\dimen131
+\caption@hangindent=\dimen132
+)
+\c@ContinuedFloat=\count103
+)
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfigure\subfigur
+e.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip50
 \subfigcapskip=\skip51
-\subfigcaptopadj=\dimen126
+\subfigcaptopadj=\dimen133
 \subfigbottomskip=\skip52
-\subfigcapmargin=\dimen127
+\subfigcapmargin=\dimen134
 \subfiglabelskip=\skip53
-\c@subfigure=\count102
-\c@lofdepth=\count103
-\c@subtable=\count104
-\c@lotdepth=\count105
+\c@subfigure=\count104
+\c@lofdepth=\count105
+\c@subtable=\count106
+\c@lotdepth=\count107
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfigure\subfigur
+e.cfg")
 \subfig@top=\skip54
 \subfig@bottom=\skip55
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.
+sty"
 Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
+base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
+rr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
+y"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefin
+ekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds
+.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetke
+ys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmd
+s.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluate
+x.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -602,8 +654,9 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexc
+mds.sty"
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -616,42 +669,41 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-)))
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+))
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count106
+\c@float@type=\count108
 \float@exts=\toks21
 \float@box=\box52
 \@float@everytoks=\toks22
 \@floatcapt=\box53
 )
-(/usr/share/texlive/texmf-dist/tex/latex/mdwtools/mdwtab.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mdwtools\mdwtab.st
+y"
 Package: mdwtab 1998/04/28 1.9 Table typesetting with style
-\tab@state=\count107
-\tab@columns=\count108
+\tab@state=\count109
+\tab@columns=\count110
 \tab@preamble=\toks23
 \tab@shortline=\toks24
-\extrarowheight=\dimen128
-\tabextrasep=\dimen129
-\arrayextrasep=\dimen130
-\smarraycolsep=\dimen131
-\smarrayextrasep=\dimen132
-\tab@width=\dimen133
-\col@sep=\dimen134
-\tab@endheight=\dimen135
+\extrarowheight=\dimen135
+\tabextrasep=\dimen136
+\arrayextrasep=\dimen137
+\smarraycolsep=\dimen138
+\smarrayextrasep=\dimen139
+\tab@width=\dimen140
+\col@sep=\dimen141
+\tab@endheight=\dimen142
 \tab@leftskip=\skip56
 \tab@rightskip=\skip57
 \fn@notes=\box54
-\fn@width=\dimen136
+\fn@width=\dimen143
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.s
+ty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.
+sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks25
 \symAMSa=\mathgroup4
@@ -659,57 +711,63 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/11/05 v2.16a AMS math features
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
+y"
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip58
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.st
+y"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks26
-\ex@=\dimen137
+\ex@=\dimen144
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen138
+\pmbraise@=\dimen145
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count109
+\inf@bad=\count111
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count110
-\leftroot@=\count111
+\uproot@=\count112
+\leftroot@=\count113
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count112
-\DOTSCASE@=\count113
+\classnum@=\count114
+\DOTSCASE@=\count115
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box55
 \strutbox@=\box56
-\big@size=\dimen139
+\big@size=\dimen146
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count114
-\c@MaxMatrixCols=\count115
+\macc@depth=\count116
+\c@MaxMatrixCols=\count117
 \dotsspace@=\muskip11
-\c@parentequation=\count116
-\dspbrk@lvl=\count117
+\c@parentequation=\count118
+\dspbrk@lvl=\count119
 \tag@help=\toks27
-\row@=\count118
-\column@=\count119
-\maxfields@=\count120
+\row@=\count120
+\column@=\count121
+\maxfields@=\count122
 \andhelp@=\toks28
-\eqnshift@=\dimen140
-\alignsep@=\dimen141
-\tagshift@=\dimen142
-\tagwidth@=\dimen143
-\totwidth@=\dimen144
-\lineht@=\dimen145
+\eqnshift@=\dimen147
+\alignsep@=\dimen148
+\tagshift@=\dimen149
+\tagwidth@=\dimen150
+\totwidth@=\dimen151
+\lineht@=\dimen152
 \@envbody=\toks29
 \multlinegap=\skip59
 \multlinetaggap=\skip60
@@ -717,71 +775,80 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/mdwtools/footnote.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mdwtools\footnote.
+sty"
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
-\fn@width=\dimen146
-)
-(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+\fn@width=\dimen153
+) ("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cite\cite.sty"
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count121
+\c@lips@count=\count123
 )
-(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\blindtext\blindtex
+t.sty"
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count122
-\c@Blindtext=\count123
-\c@blind@countparstart=\count124
-\blind@countxx=\count125
-\blindtext@numBlindtext=\count126
-\blind@countyy=\count127
-\c@blindlist=\count128
-\c@blindlistlevel=\count129
-\c@blindlist@level=\count130
-\blind@listitem=\count131
-\c@blind@listcount=\count132
-\c@blind@levelcount=\count133
-\blind@mathformula=\count134
-\blind@Mathformula=\count135
-\c@blind@randomcount=\count136
-\c@blind@randommax=\count137
-\c@blind@pangramcount=\count138
-\c@blind@pangrammax=\count139
-) (./template.aux)
+\c@blindtext=\count124
+\c@Blindtext=\count125
+\c@blind@countparstart=\count126
+\blind@countxx=\count127
+\blindtext@numBlindtext=\count128
+\blind@countyy=\count129
+\c@blindlist=\count130
+\c@blindlistlevel=\count131
+\c@blindlist@level=\count132
+\blind@listitem=\count133
+\c@blind@listcount=\count134
+\c@blind@levelcount=\count135
+\blind@mathformula=\count136
+\blind@Mathformula=\count137
+\c@blind@randomcount=\count138
+\c@blind@randommax=\count139
+\c@blind@pangramcount=\count140
+\c@blind@pangrammax=\count141
+) (template.aux
+
+LaTeX Warning: Label `medium' multiply defined.
+
+
+LaTeX Warning: Label `medium' multiply defined.
+
+)
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
 
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count140
-\scratchdimen=\dimen147
+\scratchcounter=\count142
+\scratchdimen=\dimen154
 \scratchbox=\box57
-\nofMPsegments=\count141
-\nofMParguments=\count142
+\nofMPsegments=\count143
+\nofMParguments=\count144
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count143
-\MPscratchDim=\dimen148
-\MPnumerator=\count144
-\makeMPintoPDFobject=\count145
+\MPscratchCnt=\count145
+\MPscratchDim=\dimen155
+\MPnumerator=\count146
+\makeMPintoPDFobject=\count147
 \everyMPtoPDFconversion=\toks32
 )
 *geometry* driver: auto-detecting
@@ -818,40 +885,73 @@ LaTeX Font Info:    ... okay on input line 83.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 85.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: subfigure package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 86.
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 85.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+LaTeX Font Info:    Try loading font information for U+msb on input line 86.
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for T1+aett on input line 85.
-
-(/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
+LaTeX Font Info:    Try loading font information for T1+aett on input line 86.
+("C:\Users\Turok\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) (./template.bbl [1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 94--100
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) [2] (./template.aux) ) 
+ []
+
+[1
+
+{C:/Users/Turok/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<figura1.jpg, id=11, 384.6872pt x 154.32657pt>
+File: figura1.jpg Graphic file (type jpg)
+<use figura1.jpg>
+Package pdftex.def Info: figura1.jpg  used on input line 117.
+(pdftex.def)             Requested size: 227.62677pt x 113.81366pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
+
+ []
+
+<figura2.jpg, id=12, 359.09157pt x 139.27031pt>
+File: figura2.jpg Graphic file (type jpg)
+<use figura2.jpg>
+Package pdftex.def Info: figura2.jpg  used on input line 133.
+(pdftex.def)             Requested size: 227.6261pt x 113.81349pt.
+<figura3.jpg, id=13, 372.64218pt x 152.06813pt>
+File: figura3.jpg Graphic file (type jpg)
+<use figura3.jpg>
+Package pdftex.def Info: figura3.jpg  used on input line 142.
+(pdftex.def)             Requested size: 227.61844pt x 113.81413pt.
+[2 <./figura1.jpg> <./figura2.jpg> <./figura3.jpg>] (template.bbl) [3]
+(template.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5854 strings out of 492990
- 75633 string characters out of 6135005
- 274733 words of memory out of 5000000
- 9227 multiletter control sequences out of 15000+600000
- 25916 words of font info for 64 fonts, out of 8000000 for 9000
+ 6998 strings out of 493305
+ 100218 string characters out of 3129802
+ 301827 words of memory out of 3000000
+ 10343 multiletter control sequences out of 15000+200000
+ 29692 words of font info for 73 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,6n,35p,541b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
-</u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on template.pdf (2 pages, 60634 bytes).
+ 42i,6n,39p,668b,348s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Turok/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb><C:/Users/Turok/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmbx12.pfb><C:/Users/Turok/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Turok/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Turok/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Turok
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on template.pdf (3 pages, 159866 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
+ 39 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

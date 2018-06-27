@@ -1,8 +1,12 @@
 \begin{thebibliography}{1}
 
-\bibitem{ref:haykin1}
-Simon. HAYKIN.
-\newblock Redes neurais: Princípios e prática. porto alegre.
-\newblock volume~2, pages 27--28, 2007.
+\bibitem{ref:ref_02}
+Augusto Cesar~E. Redusino.
+\newblock Aplicações de algoritmos genéticos.
+
+\bibitem{ref:ref_01}
+Hellen Souza~Luz. Thatiane~de Oliveira~Rosa.
+\newblock Conceitos básicos de algoritmos genéticos: Teoria e prática.
+\newblock pages 01,02, 2009.
 
 \end{thebibliography}
